@@ -1,0 +1,149 @@
+/* common-styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-size: 54px;
+  color: white;
+}
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+}
+h3 {
+  font-weight: 800;
+}
+/* top-banner */
+.top-banner {
+  display: flex;
+  background-color: navy;
+}
+.banner-title {
+  padding: 200px 0px 130px 120px;
+}
+.live-btn {
+  padding: 10px 30px;
+  background-color: #e02c6d;
+  border: none;
+  border-radius: 3px;
+}
+.live-btn a {
+  padding: 10px 30px;
+  background-color: #e02c6d;
+  border: none;
+  border-radius: 3px;
+  text-decoration: none;
+  color: white;
+}
+.fa-arrow-right {
+  margin-left: 15px;
+  font-size: 15px;
+}
+.banner-img {
+  width: 590px;
+  padding: 140px 90px 86px 150px;
+}
+.banner-img:hover {
+  transform: rotate(40deg);
+  transition: 3s ease-in-out;
+}
+/* players-section */
+.players {
+  display: grid;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 200px;
+}
+.player {
+  box-shadow: 5px 5px 15px 1px lightgray;
+  padding: 25px;
+}
+.player img {
+  width: 250px;
+}
+.player-info {
+  color: rgba(108, 108, 108, 1);
+}
+/* highlights-section */
+.highlights {
+  background-color: white;
+}
+.highlights-description {
+  padding-left: 182px;
+  padding-right: 66px;
+}
+.match-img {
+  padding-right: 170px;
+  padding-top: 10px;
+}
+.match-img img {
+  width: 550px;
+}
+/* footer-section */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 130px;
+  margin-bottom: 100px;
+}
+.footer img {
+  width: 40%;
+}
+.social-icons {
+  font-size: 15px;
+  margin-left: 17px;
+  color: rgba(150, 155, 171, 1);
+  background-color: rgba(0, 0, 0, 0.192);
+  padding: 5px;
+  border-radius: 30px;
+}
+/* media-query */
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  /* top-banner  */
+  .top-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner-title {
+    padding-top: 100px;
+    padding-left: 50px;
+  }
+  .banner-img {
+    width: 350px;
+    padding: 50px 0px 86px 0px;
+  }
+  /* players-section */
+  .players {
+    display: grid;
+    grid-row-gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 40px;
+  }
+  .player {
+    padding: 30px;
+  }
+  /* highlights-section */
+  .highlights-description {
+    padding-left: 45px;
+    padding-right: 40;
+  }
+  .match-img {
+    padding: 25px;
+  }
+  .match-img img {
+    width: 320px;
+    padding-top: 40px;
+  }
+}
